@@ -114,3 +114,30 @@ Carefully designed instructions to:
 Built with **love**, **science**, and **ethical AI**—to make early understanding accessible for every child.
 
 ---
+
+## 🧠 Architecture – Fully Offline Gemma 3n App
+
+The app is designed for **100% offline use**, ensuring **maximum data privacy** and **accessibility** for children anywhere.
+
+### 🧩 Components
+
+- **Frontend**: Local UI (Gradio, Tkinter, or simple HTML)
+- **Game Logic**: Python-based cognitive games for ADHD & Dyslexia traits
+- **Prompt Layer**: Converts gameplay metrics into LLM input using scoring thresholds
+- **LLM Engine**: Ollama runs Gemma 3n (2B) **fully locally** on CPU or GPU
+- **Output Renderer**: JSON + friendly report displayed locally, no cloud used
+
+### 📦 Packaging
+
+- Can be packaged with `PyInstaller` for Windows/Mac/Linux
+- Optionally run from USB drive or SD card
+
+### 💡 Why This Matters
+
+This architecture makes **BrainBuddy**:
+- 📶 **Internet-independent**
+- 🔐 **Privacy-focused**
+- 🎒 **School-deployable**
+- 🧠 **Ethically aligned for young users**
+
+📸 See the [diagram](./architecture_offline.png) for a visual overview.
