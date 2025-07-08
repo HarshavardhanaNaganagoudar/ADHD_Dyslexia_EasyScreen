@@ -40,16 +40,9 @@ ADHD-Dyslexia-EasyScreen is a fun, AI-enhanced tool where children play short co
 
 ## 🏗️ Architecture
 
-```plaintext
-+------------------+         +----------------------+         +---------------------+
-|  Cognitive Games | ----->  |  Scoring Logic (Py)  | ----->  |    Gemma 3n (LLM)   |
-+------------------+         +----------------------+         +---------------------+
-        │                            │                                 │
-        ▼                            ▼                                 ▼
- JSON gameplay data     →   Impulsivity/Flexibility Rules   →    Friendly Report
-```
----
+![Architecture Diagram](./assets/adhd_dyslexia_architecture.png)
 
+---
 ## 🧠 How Gemma 3n Is Used
 
 - **Model:** `Gemma 3n 2B` (via **Ollama**, fully local)
