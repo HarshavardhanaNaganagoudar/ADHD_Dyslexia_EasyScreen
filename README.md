@@ -39,31 +39,57 @@ ADHD-Dyslexia-EasyScreen is a fun, AI-enhanced tool where children play short co
 ---
 
 ## 🏗️ Architecture
+The ADHD-Dyslexia-EasyScreen system is composed of modular components that operate **fully offline**, enabling local cognitive evaluation via games and audio transcription.
 
-![Architecture Diagram](./assets/adhd_dyslexia_architecture.png)
+The app is designed for **100% offline use**, ensuring **maximum data privacy** and **accessibility** for children anywhere.
+
+### 🧩 Components
+
+- **Frontend**: Local UI (Gradio, Tkinter, or simple HTML)
+- **Game Logic**: Python-based cognitive games for ADHD & Dyslexia traits
+- **Prompt Layer**: Converts gameplay metrics into LLM input using scoring thresholds
+- **LLM Engine**: Ollama runs `gemma3n:e4b` **fully locally** on CPU or GPU
+- **Output Renderer**: JSON + friendly report displayed locally, no cloud used
+
+### 📦 Packaging
+
+- Can be packaged with `PyInstaller` for Windows/Mac/Linux
+- Optionally run from USB drive or SD card
+
+### 💡 Why This Matters
+
+This architecture makes **ADHD-Dyslexia-EasyScreen**:
+- 📶 **Internet-independent**
+- 🔐 **Privacy-focused**
+- 🎒 **Anywhere-deployable**
+- 🧠 **Ethically aligned for young users**
+  
+### 🏛️ Architecture Diagram
+![Architecture Diagram](https://github.com/HarshavardhanaNaganagoudar/ADHD_Dyslexia_EasyScreen/blob/main/ADHD_Dyslexia_EasyScreen_Architecture.png)
 
 ---
 ## 🧠 How Gemma 3n Is Used
 
-- **Model:** `Gemma 3n 2B` (via **Ollama**, fully local)
+- **Model:** `gemma3n:e4b` (via **Ollama**, fully local)
 
 ### 🧪 Prompt Engineering
-Carefully designed instructions to:
-- ✅ Score gameplay data using thresholds
-- ✅ Explain scores **only** when thresholds are exceeded
-- ✅ Generate a **JSON + natural language summary**
-- ✅ Add empathetic, **kid-friendly explanations**
+Custom prompts are crafted to ensure:
+- ✅ Structured **scoring of gameplay data** using predefined thresholds
+- ✅ Explanations are included **only when thresholds are exceeded**
+- ✅ Outputs are delivered in both **JSON and natural language summaries**
+- ✅ Responses are written in a **friendly, empathetic tone** suitable for children and parents
 
 ---
 
 ## 🚧 Challenges Faced
 
-| Challenge | Description |
-|----------|-------------|
-| ⚙️ Metric Mapping | Translating raw game metrics into cognitive traits (e.g., impulsivity, attention) |
-| 🔐 Local Inference | Running LLM inference offline with low memory via VS Code + Ollama |
-| 🧾 Friendliness | Balancing clinical accuracy with non-diagnostic, compassionate tone |
-| 🧠 Prompt Clarity | Designing prompts that reflect psychology-informed, child-safe language |
+| Challenge         | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| ⚙️ Metric Mapping | Translating raw gameplay metrics into cognitive traits (e.g., impulsivity, attention) |
+| 🔐 Local Inference | Ensuring LLM inference runs fully offline with limited memory using VS Code + Ollama |
+| 🧾 Friendliness    | Balancing psychological accuracy with a non-diagnostic, compassionate tone     |
+| 🧠 Prompt Clarity  | Designing prompts that are psychology-informed, child-safe, and effective      |
+
 
 ---
 
@@ -71,10 +97,9 @@ Carefully designed instructions to:
 
 | Component       | Tech                                |
 |----------------|-------------------------------------|
-| LLM            | **Gemma 3n (2B)** via Ollama         |
-| Frontend       | Gradio                              |
+| LLM            | **gemma3n:e4b** via Ollama         |
+| Frontend       | Local UI                             |
 | Local Inference| VS Code + Python                    |
-| Deployment     | Hugging Face Spaces                 |
 | Prompt Logic   | Rule-based scoring + templated JSON |
 | Visualization  | Markdown + Flow Diagrams            |
 
@@ -83,7 +108,6 @@ Carefully designed instructions to:
 ## 🔗 Links
 
 - 🎬 **Video Demo (3 mins):** [YouTube Link](https://your-youtube-link.com)
-- 💻 **Live Gradio Demo:** [Hugging Face Space](https://huggingface.co/spaces/your-space)
 - 💻 **GitHub Repo:** [GitHub Project Link](https://github.com/your-repo)
 - 📄 **PDF Version of Report:** [Technical_Report.pdf](./Technical_Report.pdf)
 
@@ -91,9 +115,9 @@ Carefully designed instructions to:
 
 ## 📸 Screenshots
 
-| 🎮 Game UI | 📄 JSON Report | 🌐 Hugging Face Demo |
-|-----------|----------------|----------------------|
-| ![Game UI](./assets/game_ui.png) | ![JSON](./assets/json_report.png) | ![Demo](./assets/demo_ui.png) |
+| 📄 Dyslexia Sample Output | 📄 ADHD Sample Output |
+|-----------|----------------|
+| ![Dyslexia Sample Output](./assets/game_ui.png) | ![ADHD Sample Output](./assets/json_report.png) |
 
 ---
 
@@ -106,27 +130,6 @@ Built with **love**, **science**, and **ethical AI**—to make early understandi
 
 ## 🧠 Architecture – Fully Offline Gemma 3n App
 
-The app is designed for **100% offline use**, ensuring **maximum data privacy** and **accessibility** for children anywhere.
 
-### 🧩 Components
-
-- **Frontend**: Local UI (Gradio, Tkinter, or simple HTML)
-- **Game Logic**: Python-based cognitive games for ADHD & Dyslexia traits
-- **Prompt Layer**: Converts gameplay metrics into LLM input using scoring thresholds
-- **LLM Engine**: Ollama runs Gemma 3n (2B) **fully locally** on CPU or GPU
-- **Output Renderer**: JSON + friendly report displayed locally, no cloud used
-
-### 📦 Packaging
-
-- Can be packaged with `PyInstaller` for Windows/Mac/Linux
-- Optionally run from USB drive or SD card
-
-### 💡 Why This Matters
-
-This architecture makes **BrainBuddy**:
-- 📶 **Internet-independent**
-- 🔐 **Privacy-focused**
-- 🎒 **School-deployable**
-- 🧠 **Ethically aligned for young users**
 
 📸 See the [diagram](./architecture_offline.png) for a visual overview.
