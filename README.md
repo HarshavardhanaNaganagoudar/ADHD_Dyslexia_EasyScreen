@@ -117,7 +117,7 @@ Custom prompts are crafted to ensure:
 
 | 📄 Dyslexia Sample Output | 📄 ADHD Sample Output |
 |-----------|----------------|
-| ![Dyslexia Sample Output](./assets/game_ui.png) | ![ADHD Sample Output](./assets/json_report.png) |
+| ![Dyslexia Sample Output](https://github.com/HarshavardhanaNaganagoudar/ADHD_Dyslexia_EasyScreen/blob/main/Dyslexia_sample_output.png) | ![ADHD Sample Output](https://github.com/HarshavardhanaNaganagoudar/ADHD_Dyslexia_EasyScreen/blob/main/ADHD_sample_output.png) |
 
 ---
 
