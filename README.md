@@ -1,22 +1,19 @@
-# ADHD_Dyslexia_EasyScreen
-Interactive cognitive games and voice recording activities for ADHD and dyslexia screening
-
-# 🧠 BrainBuddy: AI-Powered ADHD + Dyslexia Assistant
+# 🧠 ADHD-Dyslexia-EasyScreen: AI-Powered ADHD + Dyslexia screening for children
 
 ## 🚀 TL;DR
-- 🧠 **AI-Powered ADHD + Dyslexia Assistant** built using **Gemma 3n** via Ollama
-- 🎮 Uses cognitive games to evaluate flexibility, impulsivity, and memory
-- 🧾 Generates human-friendly non-diagnostic reports in JSON and natural text
-- 💻 Fully local inference (via VS Code + Ollama) and **Gradio demo on Hugging Face Spaces**
-- 🛠️ Architecture, prompt engineering, scoring logic, and technical stack explained below
+- 🧠 **AI-Powered ADHD + Dyslexia Screening** built using Google **Gemma 3n** via Ollama
+- 🎮 Combines audio-based reading comprehension (for dyslexia) and interactive cognitive games (for ADHD: flexibility, impulsivity, and memory evaluation)
+- 🧾 Produces non-diagnostic, human-friendly reports in both JSON and natural language text
+- 💻 Runs entirely offline/local via VS Code + Ollama
+- 🛠️ Architecture, prompt engineering, scoring logic, and technical stack explained below.
 
 ---
 
 ## 📝 Abstract
 
-BrainBuddy is a cognitive companion app designed for early screening of **ADHD** and **Dyslexia** in children. It leverages **Gemma 3n**, a powerful open-weight LLM, to evaluate gameplay data from cognitive tests and deliver non-diagnostic, child-friendly reports.
+ADHD-Dyslexia-EasyScreen is a cognitive companion app designed for early screening of **ADHD** and **Dyslexia** in children. It leverages **Gemma 3n**, a powerful open-weight LLM, to evaluate gameplay data from cognitive tests and deliver non-diagnostic, child-friendly reports.
 
-The goal is to assist parents and educators by providing **friendly insights**, not medical diagnoses, based on attention, impulsivity, flexibility, and memory patterns.
+The goal is to assist parents and educators by providing **friendly insights**, not medical diagnoses, based on factors reading comprehension, attention, impulsivity, flexibility, and memory patterns.
 
 ---
 
@@ -25,7 +22,7 @@ The goal is to assist parents and educators by providing **friendly insights**, 
 Early signs of ADHD and Dyslexia often go unnoticed, especially in resource-limited or high-stigma environments. Tools that do exist are either:
 - Clinical (complex, expensive)
 - Not child-friendly
-- Not privacy-respecting
+- Not privacy-respecting (cloud-dependent)
 
 There is a **need for a lightweight, local-first, friendly tool** that interprets behavior from structured cognitive activities and provides helpful reports — without cloud dependencies or diagnoses.
 
@@ -33,13 +30,12 @@ There is a **need for a lightweight, local-first, friendly tool** that interpret
 
 ## 💡 Solution Overview
 
-BrainBuddy is a fun, AI-enhanced tool where children play short cognitive games (task switching, memory recall, etc.). The app:
+ADHD-Dyslexia-EasyScreen is a fun, AI-enhanced tool where children play short cognitive games (reading aloud, task switching, memory recall, etc.). The app:
 1. Collects structured gameplay metrics (reaction times, task accuracy, etc.)
 2. Feeds them to a local **Gemma 3n** LLM running via **Ollama**
-3. Returns JSON scores and a **friendly, explainable summary**
-
-Optionally, users can explore the **web-based Gradio UI on Hugging Face Spaces**.
-
+3. Returns JSON scores and a **friendly, explainable summary** — tailored for parents and educators.
+4. Designed to be lightweight, private, and engaging — all without internet dependency or diagnostic claims.
+   
 ---
 
 ## 🏗️ Architecture
