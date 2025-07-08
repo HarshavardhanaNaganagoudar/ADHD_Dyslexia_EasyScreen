@@ -11,7 +11,7 @@
 
 ## 📝 Abstract
 
-ADHD-Dyslexia-EasyScreen is a cognitive companion app designed for early screening of **ADHD** and **Dyslexia** in children. It leverages **Gemma 3n**, a powerful open-weight LLM, to evaluate gameplay data from cognitive tests and deliver non-diagnostic, child-friendly reports.
+ADHD-Dyslexia-EasyScreen is a cognitive companion application designed for early screening of **ADHD** and **Dyslexia** in children. It leverages **Gemma 3n**, a powerful open-weight LLM, to evaluate gameplay data from cognitive tests and deliver non-diagnostic, child-friendly reports.
 
 The goal is to assist parents and educators by providing **friendly insights**, not medical diagnoses, based on factors reading comprehension, attention, impulsivity, flexibility, and memory patterns.
 
