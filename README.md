@@ -98,7 +98,7 @@ Custom prompts are crafted to ensure:
 | Component       | Tech                                |
 |----------------|-------------------------------------|
 | LLM            | **gemma3n:e4b** via Ollama         |
-| Frontend       | Local UI                             |
+| Frontend       | Local UI or (Gradio, Tkinter, or simple HTML)                            |
 | Local Inference| VS Code + Python                    |
 | Prompt Logic   | Rule-based scoring + templated JSON |
 | Visualization  | Markdown + Flow Diagrams            |
@@ -123,13 +123,7 @@ Custom prompts are crafted to ensure:
 
 ## ❤️ Final Note
 
-**BrainBuddy** is not a diagnostic tool, but a compassionate digital assistant for curious parents, educators, and young minds.  
+**ADHD-Dyslexia-EasyScreen** is not a diagnostic tool, but a compassionate digital assistant for curious parents, educators, and young minds.  
 Built with **love**, **science**, and **ethical AI**—to make early understanding accessible for every child.
 
 ---
-
-## 🧠 Architecture – Fully Offline Gemma 3n App
-
-
-
-📸 See the [diagram](./architecture_offline.png) for a visual overview.
