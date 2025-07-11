@@ -107,9 +107,8 @@ Custom prompts are crafted to ensure:
 
 ## 🔗 Links
 
-- 🎬 **Video Demo (3 mins):** [YouTube Link](https://your-youtube-link.com)
+- 🎬 **Video Demo (3 mins):** [YouTube Link](https://youtu.be/CylKy0DtV6s)
 - 💻 **GitHub Repo:** [GitHub Project Link](https://github.com/your-repo)
-- 📄 **PDF Version of Report:** [Technical_Report.pdf](./Technical_Report.pdf)
 
 ---
 
