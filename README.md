@@ -108,7 +108,7 @@ Custom prompts are crafted to ensure:
 ## 🔗 Links
 
 - 🎬 **Video Demo (3 mins):** [YouTube Link](https://youtu.be/CylKy0DtV6s)
-- 💻 **GitHub Repo:** [GitHub Project Link](https://github.com/your-repo)
+- 💻 **GitHub Repo:** [GitHub Project Link](https://github.com/HarshavardhanaNaganagoudar/ADHD_Dyslexia_EasyScreen)
 
 ---
 
